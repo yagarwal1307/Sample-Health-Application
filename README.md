@@ -107,7 +107,7 @@ Feel free to change the environment variables inside the .env file as per your n
 ```bash
 docker container run --rm -p 3000:3000 --env-file .env --name allo-backend $IMAGE_NAME
 ```
-`Make sure that the port (3000 here) used above is same as SERVER_PORT variable used inside your .env file`
+`Make sure that the port (3000 here) used above is same as SERVER_PORT variable used inside your .env file and make sure to set NODE_ENV to production in this case`
 
 rm flag above makes sure to automatically remove your container after you have stopped it.
 
