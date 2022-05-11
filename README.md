@@ -73,6 +73,29 @@ From the allo-backend directory:
 docker build -t $IMAGE_NAME .
 ```
 
+## Using Allo-Backend application
+
+After you set up the app using the sections below. You must keep these things in consideration.
+
+Since all the (/doctors) endpoints are behind authentication, they will send 401 status code unless you are authenticated.
+
+You can send a login request at /auth/login with username and password properties. This endpoint will return a bearer token which you can send with above requests to achieve desired result.
+
+For now users are hardcoded in our application. You can use any of the user from allo-backend/src/core/users/users.service file for authentication.
+
+```
+{
+    userId: 1,
+    username: 'john',
+    password: 'changeme',
+},
+{
+    userId: 2,
+    username: 'maria',
+    password: 'guess',
+}
+```
+
 ## Run Allo-Backend application locally
 
 First of all copy .env.example file to .env in your system:
