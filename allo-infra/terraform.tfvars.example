@@ -1,0 +1,9 @@
+MONGO_USERNAME=<your_database_username>
+MONGO_PASSWORD=<your_database_password>
+MONGO_HOSTNAME=<your_database_hostname>
+MONGO_DATABASE=allo
+NODE_ENV=production
+AWS_PROFILE=default
+AWS_REGION=ap-south-1
+IMAGE_URL=<container_image_url>
+SERVER_PORT=3000
